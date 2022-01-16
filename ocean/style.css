@@ -6,6 +6,7 @@
   --main-background: #e5e5e5;
   --purple1: #6477b6;
   --border: #1a2028;
+  --box-background: #f2f5ff;
 }
 
 * {
@@ -142,5 +143,64 @@ section {
 .container-items-services {
   margin-top: 14rem;
   display: flex;
+  gap: 10rem;
+}
+
+.container-services p {
+  font-size: 2rem;
+  color: var(--color-black);
+  opacity: 0.46;
+}
+
+.main-services .container-items-services .container-services .color-text-black {
+  color: var(--color-black);
+  opacity: 1;
+  text-align: justify;
+  max-width: 100rem;
+  margin-bottom: 3rem;
+}
+
+.container-services h1 {
+  margin-bottom: 4rem;
+}
+
+.main-services
+  .container-items-services
+  .container-services
+  .button-orcament
+  button {
+  padding: 1.5rem;
+  width: 30rem;
+  height: 6rem;
+  color: var(--white-color);
+  background: var(--purple1);
+  border: none;
+  box-shadow: 0px 4px 20px rgba(100, 119, 182, 0.3);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.main-services .box-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.main-services .box-container .box {
+  background: var(--box-background);
+  width: 23rem;
+  height: 23rem;
+  border-radius: 0.5rem;
+}
+
+.main-services .box-container .box .box-content {
+  padding-top: 3rem;
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 10rem;
 }

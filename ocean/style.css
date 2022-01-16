@@ -87,11 +87,7 @@ section {
 .container-items {
   margin-top: 14rem;
   display: flex;
-  gap: 10rem;
-}
-
-.container-abou {
-  padding-left: 10rem;
+  justify-content: space-between;
 }
 
 .container-about h1 {
@@ -136,4 +132,15 @@ section {
   align-items: center;
   justify-content: space-between;
   margin-top: 20rem;
+}
+
+.main-services {
+  max-width: 160rem;
+  margin: 0 auto;
+}
+
+.container-items-services {
+  margin-top: 14rem;
+  display: flex;
+  gap: 10rem;
 }

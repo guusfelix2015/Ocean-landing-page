@@ -100,7 +100,7 @@ section {
 
 .container-about p {
   font-size: 2rem;
-  max-width: 54.2rem;
+  max-width: 65rem;
   line-height: 2.6rem;
   margin-bottom: 5rem;
 }
@@ -124,15 +124,10 @@ section {
 }
 
 .patrocinates {
+  margin-top: 7rem;
   max-width: 160rem;
-  margin: 0 auto;
-}
-
-.patrocinates .patrocinates-img {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 20rem;
+  gap: 20rem;
 }
 
 .main-services {
@@ -203,4 +198,22 @@ section {
   flex-direction: column;
   align-items: flex-start;
   gap: 10rem;
+}
+
+.container-about h1 {
+  margin-top: 0;
+}
+
+.container-about p {
+  text-align: justify;
+}
+
+.container-about h3 {
+  color: var(--color-black);
+  opacity: 0.46;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 1400px) {
 }

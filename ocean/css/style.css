@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --button-color: #6477b6;
+  --white-color: #ffffff;
+  --color-text: #1a2028;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header {
+  width: 100%;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.03);
+  padding: 1rem 1rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.nav-container > ul {
+  display: flex;
+  gap: 8rem;
+}
+
+.nav-container > ul > li > a {
+  padding: 1rem 1rem;
+  margin-left: 1rem;
+  color: var(--color-text);
+  font-size: 2rem;
+}
+
+.main-container {
+  display: flex;
+  margin-top: 10rem;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.info-container > h1 {
+  font-size: 5.5rem;
+  margin-top: 5rem;
+  color: var(--color-text);
+}
+
+.info-container > p {
+  font-size: 2rem;
+  margin-top: 3rem;
+  color: var(--color-text);
+}
+
+.button-container {
+  margin-top: 4rem;
+}
+
+.button-container > button:nth-child(1) {
+  padding: 2rem 3.5rem;
+  font-size: 2rem;
+  border: none;
+  background: var(--button-color);
+  color: var(--white-color);
+  border-radius: 0.3rem;
+  margin-right: 2rem;
+}
+
+.button-container > button:nth-child(2) {
+  padding: 2rem 3.5rem;
+  font-size: 2rem;
+  border: none;
+  background: var(--white-color);
+  color: var(--color-text);
+  border-radius: 0.3rem;
+  margin-right: 2rem;
+  border: 0.1rem solid var(--color-text);
+}
+
+.carousel-container {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid red;
+}
+
+.carousel-container > img {
+  border: 1px solid red;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+
+@media screen and (max-width: 980px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .img-intro {
+    margin: 4rem 0 4rem 0;
+  }
+}

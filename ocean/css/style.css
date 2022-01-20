@@ -142,10 +142,8 @@ header {
   margin-top: 5rem;
   align-items: center;
   justify-content: start;
-  max-width: 128rem;
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  display: flex;
+  gap: 1rem;
 }
 
 .card {
@@ -159,9 +157,10 @@ header {
   height: 21rem;
   background: var(--background-card);
   border-radius: 0.3rem;
+  cursor: pointer;
 }
 
-.card p {
+.card > p {
   font-size: 1.7rem;
 }
 
@@ -180,6 +179,41 @@ header {
   cursor: pointer;
 }
 
-.contact {
+.main-contact {
+  display: flex;
   margin-top: 10rem;
+  margin-bottom: 10rem;
+  gap: 5rem;
+  justify-content: center;
+}
+
+.info-contact-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.info-contact-container > h3 {
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--color-text);
+  opacity: 0.46;
+}
+
+.info-contact-container h1 {
+  font-size: 5.5rem;
+  color: var(--color-text);
+}
+
+.info-contact-container > p {
+  font-size: 2rem;
+  color: var(--color-text);
+  margin-top: 5rem;
+}
+
+.info-contact-container > a {
+  font-size: 2rem;
+  color: var(--button-color);
+  margin-top: 4rem;
 }

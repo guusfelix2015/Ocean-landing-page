@@ -18,6 +18,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -35,6 +36,7 @@ header {
   width: 100%;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.03);
   padding: 1rem 1rem;
+  top: 0;
 }
 
 .nav-container {
@@ -57,8 +59,10 @@ header {
 }
 
 .main-container {
+  justify-content: center;
   display: flex;
   margin-top: 10rem;
+  padding-top: 5rem;
 }
 
 .info-container {
@@ -115,6 +119,7 @@ header {
 }
 
 .services {
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   margin-top: 10rem;

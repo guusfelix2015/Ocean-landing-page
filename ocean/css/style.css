@@ -31,30 +31,45 @@ img {
   padding: 0 1rem;
 }
 
-header {
-  width: 100%;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.03);
-  padding: 1rem 1rem;
-  top: 0;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 1rem;
-}
-
-.nav-container > ul {
-  display: flex;
-  gap: 8rem;
-}
-
-.nav-container > ul > li > a {
-  padding: 1rem 1rem;
-  margin-left: 1rem;
+#menu a {
   color: var(--color-text);
   font-size: 2rem;
+}
+
+#menu a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+#logo {
+  font-size: 2rem;
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+#header {
+  height: 7rem;
+  padding: 2rem 6rem 2rem 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--background-card);
+  top: 0;
+  right: 0;
+  position: fixed;
+  width: 100%;
+}
+
+#menu {
+  display: flex;
+  gap: 4rem;
+}
+
+#menu a {
+  display: block;
+}
+
+#btn-mobile {
+  display: none;
 }
 
 .main-container {
@@ -125,8 +140,7 @@ header {
 .info-container-services > h3 {
   margin-bottom: 1rem;
   font-size: 2rem;
-  color: var(--color-text);
-  opacity: 0.46;
+  color: #808080;
 }
 
 .info-container-services > h1 {
@@ -199,8 +213,7 @@ header {
   margin-top: 6rem;
   margin-bottom: 1rem;
   font-size: 2rem;
-  color: var(--color-text);
-  opacity: 0.46;
+  color: #808080;
 }
 
 .info-contact-container h1 {

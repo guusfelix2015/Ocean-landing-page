@@ -40,7 +40,77 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
+  #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 7rem;
+    right: 0;
+    height: 0;
+    background: var(--background-card);
+    transition: 0.6s;
+    z-index: 1000;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+  }
+
+  #nav.active #menu {
+    display: block;
+    height: calc(100vh - 7rem);
+    visibility: visible;
+    overflow-y: auto;
+  }
+
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1.9rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  #hamburger {
+    color: var(--color-text);
+    display: block;
+    margin-top: 0.6rem;
+    margin-left: 0.9rem;
+    border-top: 2px solid;
+    width: 20px;
+    gap: 0.5rem;
+  }
+
+  #hamburger::after,
+  #hamburger::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
   .main-container {
     align-items: center;
     justify-content: center;

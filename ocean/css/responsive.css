@@ -48,7 +48,7 @@
     top: 7rem;
     right: 0;
     height: 0;
-    background: var(--background-card);
+    background: var(--white-color);
     transition: 0.6s;
     z-index: 1000;
     visibility: hidden;

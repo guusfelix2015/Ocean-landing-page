@@ -18,7 +18,6 @@
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 
 img {
@@ -62,7 +61,6 @@ header {
   justify-content: center;
   display: flex;
   margin-top: 10rem;
-  padding-top: 5rem;
 }
 
 .info-container {
@@ -119,7 +117,6 @@ header {
 }
 
 .services {
-  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   margin-top: 10rem;
